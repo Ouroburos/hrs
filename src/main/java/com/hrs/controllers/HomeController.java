@@ -320,9 +320,11 @@ public class HomeController {
 		for(Room room : rooms){		
 			Integer typeId = room.getType().getId();
 			
+			//changed! HashMap.replace() is not supported in Java 7. 
 			if(roomCount.containsKey(room.getType())){
 				Integer i = roomCount.get(room.getType()) + 1;
-				roomCount.replace(room.getType(), i);
+				roomCount.remove(room.getType());
+				roomCount.put(room.getType(), i);
 			}
 		    else
 		    	roomCount.put(room.getType(), 1);		
