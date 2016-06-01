@@ -47,7 +47,7 @@ function getRoomTypes() {
           
         }
       };
-      xhr.open("GET", "/RestfulStayHotel/setupRT", true);
+      xhr.open("GET", "/hrs/setupRT", true);
       xhr.send();
 
 }
@@ -88,7 +88,7 @@ function getRoomCaps(){
           
         }
       };
-      xhr.open("GET", "/RestfulStayHotel/setupCap", true);
+      xhr.open("GET", "/hrs/setupCap", true);
       xhr.send();
 
 }
@@ -106,7 +106,7 @@ function getRoomPriceMin(){
 
         }
       };
-      xhr.open("GET", "/RestfulStayHotel/setupMinP", true);
+      xhr.open("GET", "/hrs/setupMinP", true);
       xhr.send();
 
 
@@ -125,7 +125,7 @@ function getRoomPriceMax(){
               
         }
       };
-      xhr.open("GET", "/RestfulStayHotel/setupMaxP", true);
+      xhr.open("GET", "/hrs/setupMaxP", true);
       xhr.send();
 
 }
@@ -252,7 +252,7 @@ function getAmenities(){
           
         }
       };
-      xhr.open("GET", "/RestfulStayHotel/setupAmns", true);
+      xhr.open("GET", "/hrs/setupAmns", true);
       xhr.send();
 
 }
