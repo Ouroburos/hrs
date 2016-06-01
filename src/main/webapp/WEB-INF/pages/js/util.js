@@ -47,7 +47,7 @@ function getRoomTypes() {
           
         }
       };
-      xhr.open("GET", "/hrs/setupRT", true);
+      xhr.open("GET", "/setupRT", true);
       xhr.send();
 
 }
@@ -88,7 +88,7 @@ function getRoomCaps(){
           
         }
       };
-      xhr.open("GET", "/hrs/setupCap", true);
+      xhr.open("GET", "/setupCap", true);
       xhr.send();
 
 }
@@ -106,7 +106,7 @@ function getRoomPriceMin(){
 
         }
       };
-      xhr.open("GET", "/hrs/setupMinP", true);
+      xhr.open("GET", "/setupMinP", true);
       xhr.send();
 
 
@@ -125,7 +125,7 @@ function getRoomPriceMax(){
               
         }
       };
-      xhr.open("GET", "/hrs/setupMaxP", true);
+      xhr.open("GET", "/setupMaxP", true);
       xhr.send();
 
 }
@@ -252,7 +252,7 @@ function getAmenities(){
           
         }
       };
-      xhr.open("GET", "/hrs/setupAmns", true);
+      xhr.open("GET", "/setupAmns", true);
       xhr.send();
 
 }
