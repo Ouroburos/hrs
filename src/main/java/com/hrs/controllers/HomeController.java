@@ -65,19 +65,12 @@ public class HomeController {
 		return "home";
 	}
 	
-	/* Begin: Create booking form with dynamic views */
+	/* Begin: Create booking form with dynamically selected options */
 	@RequestMapping(value="/setupRT", method=RequestMethod.GET)
 	public void getRoomTypes(HttpServletRequest request, HttpServletResponse response) throws IOException {		
 		
-        List<RoomType> rts = rtDao.getAllRoomType(); 
-        HashMap<Integer, String> rtNames =  new HashMap<>();
+        HashMap<Integer, String> rtNames = homeService.getRoomTypes(); 
         
-        for(RoomType rt : rts){
-           rtNames.put(rt.getId(), rt.getName());
-        }
-
-        System.out.println(rtNames);
-		
 		ObjectMapper mapper = new ObjectMapper();
 		String johnJSON = mapper.writeValueAsString(rtNames);
 		
